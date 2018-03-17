@@ -22,10 +22,12 @@ describe('Age Calculator', function() {
   it('should convert human age into Jupiter years', function(){
     expect(newCalculator.GetAgeInJupiterYears(20)).toEqual(2);
   });
+  })
 
 
+  describe('Difference between dates', function() {
+  it('should calculate the difference between birthdate and current date and show the result in seconds', function() {
 
-  // it('should calculate the difference between birthdate and current date and show the result in seconds', function() {
-  // expect(newCalculator.GetDifferenceBetweenDatesInSeconds())
-  // })
+  expect(newCalculator.GetDifferenceBetweenDatesInSeconds('2018-03-15', '2018-03-17')).toEqual(172800);
+});
 });
