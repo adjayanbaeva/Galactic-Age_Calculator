@@ -11,6 +11,13 @@ export class Calculator {
   }
 
 
+  GetAgeInVenusYears(age){
+    return (Math.round(age/0.62));
+  }
+
+
+
+
 
 }
 /* eslint-enable no-unused-vars */
