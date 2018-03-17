@@ -21,6 +21,11 @@ export class Calculator {
   }
 
 
+  GetAgeInJupiterYears(age){
+    return (Math.round(age/11.86));
+  }
+
+
 
 
 
