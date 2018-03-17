@@ -16,6 +16,11 @@ export class Calculator {
   }
 
 
+  GetAgeInMarsYears(age){
+    return (Math.round(age/1.88));
+  }
+
+
 
 
 
