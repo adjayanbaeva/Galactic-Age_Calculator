@@ -36,9 +36,25 @@ export class Calculator {
   GetDifferenceBetweenDatesInYears(currentDate, birthdate){
     let date1 = new Date(currentDate);
     let date2 = new Date(birthdate);
-    let diffInYears = (date2.getTime() - date1.getTime())/(1000*60*60*24*365)
+    let diffInYears = Math.round((date2.getTime() - date1.getTime())/(1000*60*60*24*365))
     return diffInYears;
   }
+
+
+  GetYearsLeftOnEarth(age){
+    let lifeExpect = 79
+    let expectedLifeInYears = lifeExpect - age;
+    return expectedLifeInYears;
+    }
+
+
+  // GetYearsLeftOnEarth(age){
+  //   let lifeExpect = 79;
+  //   let userAge = this.GetDifferenceBetweenDatesInYears()
+  //   let expectedLifeInYears = parseInt(lifeExpect - userAge);
+  //   return expectedLifeInYears;
+  //   }
+
 
 
 
