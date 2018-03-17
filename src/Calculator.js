@@ -26,8 +26,17 @@ export class Calculator {
   }
 
 
-
+  GetDifferenceBetweenDatesInSeconds(currentDate, birthdate){
+    var date1 = new Date(currentDate);
+    var date2 = new Date(birthdate);
+    var diffInSeconds = (date2.getTime() - date1.getTime())/1000
+    return diffInSeconds;
+  }
+  
 
 
 }
+
+
+
 /* eslint-enable no-unused-vars */
