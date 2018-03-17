@@ -44,20 +44,13 @@ export class Calculator {
   GetYearsLeftOnEarth(age){
     let lifeExpect = 79
     let expectedLifeInYears = lifeExpect - age;
-    return expectedLifeInYears;
+    if (expectedLifeInYears>age){
+      return expectedLifeInYears;
+    } else{
+      return ("you are a long liver")
     }
 
-
-  // GetYearsLeftOnEarth(age){
-  //   let lifeExpect = 79;
-  //   let userAge = this.GetDifferenceBetweenDatesInYears()
-  //   let expectedLifeInYears = parseInt(lifeExpect - userAge);
-  //   return expectedLifeInYears;
-  //   }
-
-
-
-
+    }
 
 
 

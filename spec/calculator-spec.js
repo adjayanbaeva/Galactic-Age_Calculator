@@ -26,16 +26,19 @@ describe('Age Calculator', function() {
 
 
   describe('Difference between dates', function() {
-
   it('should calculate the difference between birthdate and current date and show the result in seconds', function() {
   expect(newCalculator.GetDifferenceBetweenDatesInSeconds('2018-03-15', '2018-03-17')).toEqual(172800);
 });
 });
 
-  describe('life expectancy', function() {
+describe('life expectancy', function() {
 
   it('should calculate how many years a user has left to live on Earth', function() {
   expect(newCalculator.GetYearsLeftOnEarth(20)).toEqual(59);
+
+  it('should calculate how many years a user has left to live on Mercury', function() {
+  expect(newCalculator.GetYearsLeftOnEarth(83)).toEqual("you are a long liver");
+});
 
 });
 });
