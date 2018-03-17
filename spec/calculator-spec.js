@@ -19,6 +19,10 @@ describe('Age Calculator', function() {
     expect(newCalculator.GetAgeInMarsYears(20)).toEqual(11);
   });
 
+  it('should convert human age into Jupiter years', function(){
+    expect(newCalculator.GetAgeInJupiterYears(20)).toEqual(2);
+  });
+
 
 
   // it('should calculate the difference between birthdate and current date and show the result in seconds', function() {
