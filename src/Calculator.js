@@ -52,6 +52,17 @@ export class Calculator {
 
     }
 
+    GetYearsLeftOnMercury(age){
+      let lifeExpect = 79
+      let ageInMars = Math.round(age/0.24)
+      let expectedLifeInYears = (lifeExpect - ageInMars);
+      if (expectedLifeInYears > age){
+        return expectedLifeInYears;
+      } else{
+        return ("you are a long liver")
+      }
+    }
+
 
 
 }

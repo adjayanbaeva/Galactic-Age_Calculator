@@ -35,10 +35,11 @@ describe('life expectancy', function() {
 
   it('should calculate how many years a user has left to live on Earth', function() {
   expect(newCalculator.GetYearsLeftOnEarth(20)).toEqual(59);
+});
 
   it('should calculate how many years a user has left to live on Mercury', function() {
   expect(newCalculator.GetYearsLeftOnEarth(83)).toEqual("you are a long liver");
-});
+
 
 });
 });
