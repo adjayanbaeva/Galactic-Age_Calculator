@@ -11,7 +11,7 @@ describe('Age Calculator', function() {
     expect(newCalculator.GetAgeInMercuryYears(20)).toEqual(83);
   });
 
-  it('should convert human age into Mercury years', function(){
+  it('should convert human age into Venus years', function(){
     expect(newCalculator.GetAgeInVenusYears(20)).toEqual(32);
   });
 
@@ -25,21 +25,23 @@ describe('Age Calculator', function() {
   })
 
 
-  describe('Difference between dates', function() {
+describe('Difference between dates', function() {
   it('should calculate the difference between birthdate and current date and show the result in seconds', function() {
   expect(newCalculator.GetDifferenceBetweenDatesInSeconds('2018-03-15', '2018-03-17')).toEqual(172800);
-});
+  });
 });
 
 describe('life expectancy', function() {
 
   it('should calculate how many years a user has left to live on Earth', function() {
   expect(newCalculator.GetYearsLeftOnEarth(20)).toEqual(59);
-});
+  });
 
   it('should calculate how many years a user has left to live on Mercury', function() {
-  expect(newCalculator.GetYearsLeftOnEarth(83)).toEqual("you are a long liver");
+  expect(newCalculator.GetYearsLeftOnMercury(83)).toEqual("you are a long liver");
+  });
 
-
-});
+  // it('should calculate how many years a user has left to live on Venus', function() {
+  // expect(newCalculator.GetYearsLeftOnVenus(32)).toEqual(47);
+  // });
 });

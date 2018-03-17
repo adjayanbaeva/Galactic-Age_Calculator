@@ -5,26 +5,21 @@ export class Calculator {
     return (age * 365 * 24 * 60 * 60);
   }
 
-
   GetAgeInMercuryYears(age){
     return (Math.round(age/0.24));
   }
-
 
   GetAgeInVenusYears(age){
     return (Math.round(age/0.62));
   }
 
-
   GetAgeInMarsYears(age){
     return (Math.round(age/1.88));
   }
 
-
   GetAgeInJupiterYears(age){
     return (Math.round(age/11.86));
   }
-
 
   GetDifferenceBetweenDatesInSeconds(currentDate, birthdate){
     let date1 = new Date(currentDate);
@@ -40,7 +35,6 @@ export class Calculator {
     return diffInYears;
   }
 
-
   GetYearsLeftOnEarth(age){
     let lifeExpect = 79
     let expectedLifeInYears = lifeExpect - age;
@@ -48,24 +42,33 @@ export class Calculator {
       return expectedLifeInYears;
     } else{
       return ("you are a long liver")
-    }
-
+     }
     }
 
     GetYearsLeftOnMercury(age){
       let lifeExpect = 79
-      let ageInMars = Math.round(age/0.24)
-      let expectedLifeInYears = (lifeExpect - ageInMars);
+      let ageInMercury = Math.round(age/0.24)
+      let expectedLifeInYears = (lifeExpect - ageInMercury);
       if (expectedLifeInYears > age){
         return expectedLifeInYears;
       } else{
-        return ("you are a long liver")
+        return ("you are a long liver");
       }
     }
 
-
+    // GetYearsLeftOnVenus(age){
+    //   let lifeExpect = 79
+    //   let ageInVenus = Math.round(age/0.62)
+    //   let expectedLifeInYears = (lifeExpect - ageInVenus);
+    //   if (expectedLifeInYears > age){
+    //     return expectedLifeInYears;
+    //   } else{
+    //     return ("you are a long liver");
+    //   }
+    // }
 
 }
+
 
 
 
