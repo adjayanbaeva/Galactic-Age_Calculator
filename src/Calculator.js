@@ -27,12 +27,22 @@ export class Calculator {
 
 
   GetDifferenceBetweenDatesInSeconds(currentDate, birthdate){
-    var date1 = new Date(currentDate);
-    var date2 = new Date(birthdate);
-    var diffInSeconds = (date2.getTime() - date1.getTime())/1000
+    let date1 = new Date(currentDate);
+    let date2 = new Date(birthdate);
+    let diffInSeconds = (date2.getTime() - date1.getTime())/1000
     return diffInSeconds;
   }
-  
+
+  GetDifferenceBetweenDatesInYears(currentDate, birthdate){
+    let date1 = new Date(currentDate);
+    let date2 = new Date(birthdate);
+    let diffInYears = (date2.getTime() - date1.getTime())/(1000*60*60*24*365)
+    return diffInYears;
+  }
+
+
+
+
 
 
 }
